@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Satisfaction Survey</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Employee Satisfaction Survey</h2>
+        </div>
+
+       <form id="surveyForm">
+            <div class="form-item">
+                <p>Employee ID:</p>
+                <input type="text" id="employeeId" name="employeeId" required placeholder="Enter your employee ID">
+            </div>
+            <div class="form-item">
+                <p>First Name:</p>
+                <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+            </div>
+            <div class="form-item">
+                <p>Last Name:</p>
+                <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+            </div>
+            <div class="form-item">
+                <p>1. I feel encouraged to share my ideas on better ways of doing things.</p>
+                <div>
+                    <input type="radio" id="agree1" name="question1" value="Agree"><label for="agree1">Agree</label>
+                    <input type="radio" id="neither1" name="question1" value="Neither"><label for="neither1">Neither</label>
+                    <input type="radio" id="disagree1" name="question1" value="Disagree"><label for="disagree1">Disagree</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <p>2. My work gives me a feeling of personal accomplishment and satisfaction.</p>
+                <div>
+                    <input type="radio" id="agree2" name="question2" value="Agree"><label for="agree2">Agree</label>
+                    <input type="radio" id="neither2" name="question2" value="Neither"><label for="neither2">Neither</label>
+                    <input type="radio" id="disagree2" name="question2" value="Disagree"><label for="disagree2">Disagree</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <p>3. At my work, I have room to grow and new things to learn.</p>
+                <div>
+                    <input type="radio" id="agree3" name="question3" value="Agree"><label for="agree3">Agree</label>
+                    <input type="radio" id="neither3" name="question3" value="Neither"><label for="neither3">Neither</label>
+                    <input type="radio" id="disagree3" name="question3" value="Disagree"><label for="disagree3">Disagree</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <p>4. I am happy with the team's communication and company's culture.</p>
+                <div>
+                    <input type="radio" id="agree4" name="question4" value="Agree"><label for="agree4">Agree</label>
+                    <input type="radio" id="neither4" name="question4" value="Neither"><label for="neither4">Neither</label>
+                    <input type="radio" id="disagree4" name="question4" value="Disagree"><label for="disagree4">Disagree</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <p>5. I have great life/work balance without disruption of personal life.</p>
+                <div>
+                    <input type="radio" id="agree5" name="question5" value="Agree"><label for="agree5">Agree</label>
+                    <input type="radio" id="neither5" name="question5" value="Neither"><label for="neither5">Neither</label>
+                    <input type="radio" id="disagree5" name="question5" value="Disagree"><label for="disagree5">Disagree</label>
+                </div>
+            </div>
+            <div class="form-item">
+                <p>Would you recommend working at this company? Rate your satisfaction on a scale from 1 to 5.</p>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script type="module" src="firebase-config.js"></script>
+<script type="module" src="script.js"></script>
+
+    
+    </body>
+</html>
